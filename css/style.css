@@ -1,0 +1,75 @@
+/* Селекторы */
+
+/* Селектор тега */
+p {
+	/* Обращаюсь ко всем тегам p на странице */
+	color: red;
+}
+h1{
+	color: green;
+	font-size: 30px;
+}
+/* Обращаюсь ко всем моим тегам h2 на странице */
+h2{
+	color: darkmagenta;
+}
+span {
+	/* Обращаюсь ко всем тегам SPAN на странице */
+	color: gold;
+} 
+
+/* Обращаюсь ко всем тегам span в теге P на странице. Они все поняняли цвет*/
+
+p span {
+	color: lightcoral;
+}
+
+/* Обращаюсь ко ВСЕМ тегам А. */
+a {
+	color: blue;
+}
+
+/* Селектор класса, начинается с точки */
+/* Обратились ко ВСЕМ объектам на странице с классом text. */
+.text {
+	color: grey;
+}
+.paragraph {
+	font-size: 17px;
+}
+/* Селектор ID */
+
+#block {
+	color: darkorange;
+}
+/* УТОЧНЕНИЕ */
+
+/* 2. Селектор класса приоритетней чем селектор тега */
+.text {
+	color: darkolivegreen;
+}
+div {
+	color: hotpink;
+}
+/* Селектор ID - самый приоритетный */
+#block {
+	color: darkcyan;
+}
+
+/* 3. Уточняем обращение  */
+/* Все объекты DIV c классом text */
+div.text {
+	color: purple;
+}
+/* Все объекты c классом text */
+.text {
+	color: violet;
+}
+
+/* Комбинация селекторов классов */
+
+/* Все объекты c классами text и paragraph ОДНОВРЕМЕННО */
+.name.paragraph {
+	color: lightblue;
+}
+
